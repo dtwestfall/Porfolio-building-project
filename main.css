@@ -58,12 +58,12 @@
 
 /*Everything below the Nav menu aka hero image and text---------------------*/
 
-
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,400');
 body {
-    margin: 0;
-    font-family: sans-serif;
-    background-color: #FFF8DC
+  background: #FFFAFA;
+  font-family: 'Raleway', sans-serif;
 }
+
 
 /*Hero images are functioning as the parent elements throughout*/
 .hero {
@@ -126,6 +126,7 @@ body {
 /* Start About Me styling */
 
 .hero3 {
+  position: relative;
     /* Sizing */
     width: 100vw;
     height: 100vh;
@@ -146,7 +147,7 @@ background-image: linear-gradient(rgba(0, 0, 0, 0.2),rgba(0, 0, 0, 0.2)), url('h
 }
 
 .hero3 h1 {
-  position: fixed;
+  position: relative;
     /* Text styles */
     font-size: 5em;
     /* Margins */
@@ -156,14 +157,274 @@ background-image: linear-gradient(rgba(0, 0, 0, 0.2),rgba(0, 0, 0, 0.2)), url('h
 }
 
 .hero3 h2 {
-  position: fixed;
+  position: relative;
     /* Text styles */
-    font-size: 1.5em;
+    font-size: 2.0em;
     /* Margins */
     margin-top: 0;
-    margin-bottom: 0.0em;
+    margin-bottom: 0.1em;
     opacity: 0.90;
 }
+
+
+/* START BUTTON CREATION */
+.button {
+  position: absolute;
+  top:100px;
+  left:250px;
+  display: inline-flex;
+  height: 40px;
+  width: 150px;
+  border: 2px solid #FFF8DC;
+  margin: 20px 20px 20px 20px;
+  color: #FFF8DC;
+  text-decoration: none;
+  font-size: .8em;
+  letter-spacing: 1.5px;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+
+#button-1 {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+#button-1 a {
+  position: relative;
+  transition: all .45s ease-Out;
+  color: #FFF8DC;
+}
+
+#translate {
+  transform: rotate(50deg);
+  width: 100%;
+  height: 250%;
+  left: -200px;
+  top: -30px;
+  background:#556B2F;
+  position: absolute;
+  transition: all .3s ease-Out;
+}
+
+#button-1:hover #translate {
+  left: 0;
+}
+
+#button-1:hover a {
+  color: #FFF8DC;
+}
+
+#button-2 {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+#button-2 a {
+  position: relative;
+  transition: all .45s ease-Out;
+  color: #FFF8DC;
+}
+
+#translate {
+  transform: rotate(50deg);
+  width: 100%;
+  height: 250%;
+  left: -200px;
+  top: -30px;
+  background:#556B2F;
+  position: absolute;
+  transition: all .3s ease-Out;
+}
+
+#button-2:hover #translate {
+  left: 0;
+}
+
+#button-2:hover a {
+  color: #FFF8DC;
+}
+
+#button-3 {
+  position: relative;
+  left: -250px;
+  top: -65px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+#button-3 a {
+  position: relative;
+  transition: all .45s ease-Out;
+  color: #FFF8DC;
+}
+
+#translate {
+  transform: rotate(50deg);
+  width: 100%;
+  height: 250%;
+  left: -200px;
+  top: -30px;
+  background:#556B2F;
+  position: absolute;
+  transition: all .3s ease-Out;
+}
+
+#button-3:hover #translate {
+  left: 0;
+}
+
+#button-3:hover a {
+  color: #FFF8DC;
+}
+
+.hero30 {
+  position: relative;
+    /* Sizing */
+    width: 100vw;
+    height: 100vh;
+    /* Flexbox stuff */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* Text styles */
+    text-align: center;
+    color: #FFF8DC;
+    /* Background styles */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1),rgba(0, 0, 0, 0.1)), url('https://www.visittheusa.com/sites/default/files/styles/4_3_2800x2100_/public/images/facts_image/2019-11/45a76bc2-6647-49c9-8aee-995a4b19e47d.jpeg?itok=pXUGTRHx');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+
+
+/*Below is Skills bar creation code---------------------------------------------------*/
+
+::selection{
+  color: #FFF8DC;
+  background: #556B2F;
+}
+.skill-bars{
+  padding: 25px 30px;
+  width: 600px;
+  background: #FFF8DC;
+  box-shadow: 5px 5px 20px rgba(0,0,0,0.2);
+  border-radius: 10px;
+}
+.skill-bars .bar{
+  margin: 20px 0;
+}
+.skill-bars .bar:first-child{
+  margin-top: 0px;
+}
+.skill-bars .bar .info{
+  margin-bottom: 5px;
+}
+.skill-bars .bar .info span{
+  font-weight: 500;
+  font-size: 17px;
+  opacity: 0;
+  animation: showText 0.5s 1s linear forwards;
+}
+@keyframes showText {
+  100%{
+    opacity: 1;
+  }
+}
+.skill-bars .bar .progress-line{
+  height: 10px;
+  width: 100%;
+  background: #FFF8DC;
+  position: relative;
+  transform: scaleX(0);
+  transform-origin: left;
+  border-radius: 10px;
+  box-shadow: inset 0 1px 1px rgba(0,0,0,0.05),
+              0 1px rgba(255,255,255,0.8);
+  animation: animate 1s cubic-bezier(1,0,0.5,1) forwards;
+}
+@keyframes animate {
+  100%{
+    transform: scaleX(1);
+  }
+}
+.bar .progress-line span{
+  height: 100%;
+  position: absolute;
+  border-radius: 10px;
+  transform: scaleX(0);
+  transform-origin: left;
+  background: #556B2F;
+  animation: animate 1s 1s cubic-bezier(1,0,0.5,1) forwards;
+}
+.bar .progress-line.html span{
+  width: 90%;
+}
+.bar .progress-line.css span{
+  width: 60%;
+}
+.bar .progress-line.jquery span{
+  width: 85%;
+}
+.bar .progress-line.python span{
+  width: 50%;
+}
+.bar .progress-line.mysql span{
+  width: 75%;
+}
+.progress-line span::before{
+  position: absolute;
+  content: "";
+  top: -10px;
+  right: 0;
+  height: 0;
+  width: 0;
+  border: 7px solid transparent;
+  border-bottom-width: 0px;
+  border-right-width: 0px;
+  border-top-color: #000;
+  opacity: 0;
+  animation: showText2 0.5s 1.5s linear forwards;
+}
+.progress-line span::after{
+  position: absolute;
+  top: -28px;
+  right: 0;
+  font-weight: 500;
+  background: #000;
+  color: #FFF8DC;
+  padding: 1px 8px;
+  font-size: 12px;
+  border-radius: 3px;
+  opacity: 0;
+  animation: showText2 0.5s 1.5s linear forwards;
+}
+@keyframes showText2 {
+  100%{
+    opacity: 1;
+  }
+}
+.progress-line.html span::after{
+  content: "90%";
+}
+.progress-line.css span::after{
+  content: "60%";
+}
+.progress-line.jquery span::after{
+  content: "85%";
+}
+.progress-line.python span::after{
+  content: "50%";
+}
+.progress-line.mysql span::after{
+  content: "75%";
+}
+
 /*End About Me Styling */
 /*-------------------------------------------------------------------------------------*/
 /*Start Projects Styling */
