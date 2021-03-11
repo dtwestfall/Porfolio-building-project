@@ -101,7 +101,7 @@ body {
 .hero .btn {
     /* Positioning and sizing */
     display: block;
-    width: 200px;
+    width: 300px;
     /* Padding and margins */
        padding: 1em;
        margin-top: 20px;
@@ -220,6 +220,8 @@ background-image: linear-gradient(rgba(0, 0, 0, 0.2),rgba(0, 0, 0, 0.2)), url('h
 
 #button-2 {
   position: relative;
+  left:-5px;
+  top: -70px;
   overflow: hidden;
   cursor: pointer;
 }
@@ -308,7 +310,7 @@ background-image: linear-gradient(rgba(0, 0, 0, 0.2),rgba(0, 0, 0, 0.2)), url('h
     padding: 10px;
     border: 10px;
     margin: 0;
-   position: absolute;
+   position: relative;
    top: 8px;
    left: 16px;
    font-size: 20px;
@@ -466,7 +468,7 @@ background-image: linear-gradient(rgba(0, 0, 0, 0.2),rgba(0, 0, 0, 0.2)), url('h
 .hero4 {
   /* Sizing */
   width: 100vw;
-  height: 100vh;
+  height: 125vh;
   /* Flexbox stuff */
   display: flex;
   justify-content: center;
@@ -481,7 +483,7 @@ background-image: linear-gradient(rgba(0, 0, 0, 0.2),rgba(0, 0, 0, 0.2)), url('h
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
-
+/*
 .hero4 h1 {
   display: block;
   font-style: italic;
@@ -521,7 +523,54 @@ background-image: linear-gradient(rgba(0, 0, 0, 0.2),rgba(0, 0, 0, 0.2)), url('h
   padding: 100px 30px;
   position:absolute;
 }
+*/
 
+* {
+  box-sizing: border-box;
+}
+
+.header {
+  position: absolute;
+  top: 50px;
+  text-align: left;
+  margin-bottom: 800px;
+  padding: 32px;
+  font-size: 2rem;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 5px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 10px;
+}
+
+.column img {
+  margin-top: 10px;
+  vertical-align: middle;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    flex: 10%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
 /*End Projects Styling */
 /*--------------------------------------------------------------------------------------*/
 /* Start Digital Postcard Styling */
@@ -547,38 +596,41 @@ background-image: linear-gradient(rgba(0, 0, 0, 0.2),rgba(0, 0, 0, 0.2)), url('h
 
 .hero5 h1 {
   display: block;
+  left: 400px;
   font-style: normal;
-  position: fixed;
+  position: relative;
   text-align: center;
   margin: 0;
   font-size: 4rem;
   white-space: nowrap;
-  height: 80%;
+  height: 35%;
 
 }
 
 .hero5 h2 {
   display: block;
+  left: 50px;
   font-style: italic;
-  position: fixed;
+  position: relative;
   text-align: center;
   margin: 7;
   font-size: 1rem;
   white-space: nowrap;
-  height: 65%;
+  height: 20%;
 }
 
 .img1 {
   display: block;
   position: relative;
   margin: 0;
-  left: -260px;
-  top: -295px;
+  left: -250px;
+  top: -350px;
 }
 /* Hex Icon styles------------------------------------------------------ */
-[class^="hex-icon"] { width: 42px; height: 100px; margin: 30px; display: inline-block; transition: all 0.2s cubic-bezier(0.215, 0.610, 0.355, 1.000); -webkit-transition: all 0.2s cubic-bezier(0.215, 0.610, 0.355, 1.000); }
+[class^="hex-icon-wave"] { width: 42px; height: 100px; margin: 30px;position: relative; left: -497px; bottom: -320px; display: inline-block; transition: all 0.2s cubic-bezier(0.215, 0.610, 0.355, 1.000); -webkit-transition: all 0.2s cubic-bezier(0.215, 0.610, 0.355, 1.000); }
+[class^="hex-icon-heart"] { width: 42px; height: 100px; margin: 30px;position: relative; left: -600px; bottom: 0px;display: inline-block; transition: all 0.2s cubic-bezier(0.215, 0.610, 0.355, 1.000); -webkit-transition: all 0.2s cubic-bezier(0.215, 0.610, 0.355, 1.000); }
 [class^="hex-icon"]:hover { transform: scale3d(1.2, 1.2, 1); -webkit-transform: scale3d(1.2, 1.2, 1); transition: all 0.35s cubic-bezier(0.000, 1.270, 0.460, 1.650); -webkit-transition: all 0.35s cubic-bezier(0.000, 1.270, 0.460, 1.650); }
-[class^="hex-icon"] svg { width: 100%; height: 100%; display: block; }
+[class^="hex-icon"] svg { width: 100%; height: 100%; display: block;}
 .hex-icon-wave path:first-of-type { fill: #219cb5; }
 .hex-icon-wave circle { stroke: #FFF8DC; stroke-width: 2px; fill: none; }
 .hex-icon-wave mask circle { fill: #FFF8DC; stroke: none; }
@@ -594,4 +646,5 @@ background-image: linear-gradient(rgba(0, 0, 0, 0.2),rgba(0, 0, 0, 0.2)), url('h
 
 
 }
+
 /* End Digital Postcard Styling */
