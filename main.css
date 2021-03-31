@@ -284,27 +284,6 @@ background-image: linear-gradient(rgba(0, 0, 0, 0.2),rgba(0, 0, 0, 0.2)), url('h
   color: #FFF8DC;
 }
 
-.hero30 {
-  position: relative;
-    /* Sizing */
-    width: 100vw;
-    height: 100vh;
-    /* Flexbox stuff */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    /* Text styles */
-    text-align: center;
-    color: #FFF8DC;
-    /* Background styles */
-    /* ALTERNATE BG IMAGE---background-image: linear-gradient(rgba(0, 0, 0, 0.1),rgba(0, 0, 0, 0.1)), url('https://www.visittheusa.com/sites/default/files/styles/4_3_2800x2100_/public/images/facts_image/2019-11/45a76bc2-6647-49c9-8aee-995a4b19e47d.jpeg?itok=pXUGTRHx');*/
-background-image: linear-gradient(rgba(0, 0, 0, 0.2),rgba(0, 0, 0, 0.2)), url('https://www.setaswall.com/wp-content/uploads/2019/07/Hill-wallpaper-079-1920x1280.jpg');
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-}
-
 .content-box1 {
     width: 800px;
     padding: 10px;
@@ -316,26 +295,6 @@ background-image: linear-gradient(rgba(0, 0, 0, 0.2),rgba(0, 0, 0, 0.2)), url('h
    font-size: 20px;
 }
 
-.hero300 {
-  position: relative;
-    /* Sizing */
-    width: 100vw;
-    height: 100vh;
-    /* Flexbox stuff */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    /* Text styles */
-    text-align: center;
-    color: #FFF8DC;
-    /* Background styles */
-    /* ALTERNATE BG IMAGE---background-image: linear-gradient(rgba(0, 0, 0, 0.1),rgba(0, 0, 0, 0.1)), url('https://www.visittheusa.com/sites/default/files/styles/4_3_2800x2100_/public/images/facts_image/2019-11/45a76bc2-6647-49c9-8aee-995a4b19e47d.jpeg?itok=pXUGTRHx');*/
-background-image: linear-gradient(rgba(0, 0, 0, 0.2),rgba(0, 0, 0, 0.2)), url('https://chirallogic.com/wp-content/uploads/2017/10/dark-forest.jpg');
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-}
 /*Below is Skills bar creation code---------------------------------------------------*/
 
 ::selection{
@@ -401,13 +360,13 @@ background-image: linear-gradient(rgba(0, 0, 0, 0.2),rgba(0, 0, 0, 0.2)), url('h
   width: 90%;
 }
 .bar .progress-line.css span{
-  width: 60%;
+  width: 70%;
 }
 .bar .progress-line.jquery span{
-  width: 85%;
+  width: 25%;
 }
 .bar .progress-line.python span{
-  width: 50%;
+  width: 30%;
 }
 .bar .progress-line.mysql span{
   width: 75%;
@@ -450,13 +409,13 @@ background-image: linear-gradient(rgba(0, 0, 0, 0.2),rgba(0, 0, 0, 0.2)), url('h
   content: "90%";
 }
 .progress-line.css span::after{
-  content: "60%";
+  content: "70%";
 }
 .progress-line.jquery span::after{
-  content: "85%";
+  content: "25%";
 }
 .progress-line.python span::after{
-  content: "50%";
+  content: "30%";
 }
 .progress-line.mysql span::after{
   content: "75%";
@@ -464,115 +423,7 @@ background-image: linear-gradient(rgba(0, 0, 0, 0.2),rgba(0, 0, 0, 0.2)), url('h
 
 /*End About Me Styling */
 /*-------------------------------------------------------------------------------------*/
-/*Start Projects Styling */
-.hero4 {
-  /* Sizing */
-  width: 100vw;
-  height: 125vh;
-  /* Flexbox stuff */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  /* Text styles */
-  text-align: center;
-  color: #FFF8DC;
-  /* Background styles */
-  background-image: linear-gradient(rgba(0, 0, 0, 0.1),rgba(0, 0, 0, 0.1)), url('https://c0.wallpaperflare.com/preview/730/1000/1012/close-up-dark-green-environment-flora.jpg');
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-}
-/*
-.hero4 h1 {
-  display: block;
-  font-style: italic;
-  position: absolute;
-  text-align: left;
-  margin: 0;
-  font-size: 3rem;
-  white-space: nowrap;
-  height: 90%;
-  left: 50px;
-  opacity: 0.80;
 
-}
-
-#wrapper {
-  display: block;
-  width: 640px;
-  margin: 0 auto;
-  position: absolute;
-}
-
-#textbox {
-  display: block;
-  margin-top:10px;
-  background-color: black;
-  position: absolute;
-  width: 300px;
-  height: 400px;
-  opacity: 0.5;
-  top: -250px;
-  left: -550px;
-  text-align: center;
-  border: 2px solid silver;
-}
-
-#content {
-  padding: 100px 30px;
-  position:absolute;
-}
-*/
-
-* {
-  box-sizing: border-box;
-}
-
-.header {
-  position: absolute;
-  top: 50px;
-  text-align: left;
-  margin-bottom: 800px;
-  padding: 32px;
-  font-size: 2rem;
-}
-
-.row {
-  display: flex;
-  flex-wrap: wrap;
-  padding: 0 5px;
-}
-
-/* Create four equal columns that sits next to each other */
-.column {
-  flex: 25%;
-  max-width: 25%;
-  padding: 0 10px;
-}
-
-.column img {
-  margin-top: 10px;
-  vertical-align: middle;
-}
-
-/* Responsive layout - makes a two column-layout instead of four columns */
-@media screen and (max-width: 800px) {
-  .column {
-    flex: 10%;
-    max-width: 50%;
-  }
-}
-
-/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
-  .column {
-    flex: 100%;
-    max-width: 100%;
-  }
-}
-/*End Projects Styling */
-/*--------------------------------------------------------------------------------------*/
 /* Start Digital Postcard Styling */
 
 .hero5 {
@@ -603,7 +454,7 @@ background-image: linear-gradient(rgba(0, 0, 0, 0.2),rgba(0, 0, 0, 0.2)), url('h
   margin: 0;
   font-size: 4rem;
   white-space: nowrap;
-  height: 35%;
+  height: 30%;
 
 }
 
@@ -616,7 +467,7 @@ background-image: linear-gradient(rgba(0, 0, 0, 0.2),rgba(0, 0, 0, 0.2)), url('h
   margin: 7;
   font-size: 1rem;
   white-space: nowrap;
-  height: 20%;
+  height: 15%;
 }
 
 .img1 {
